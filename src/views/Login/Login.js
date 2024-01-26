@@ -59,6 +59,10 @@ const Login = () => {
             </CardTitle>
             <CardText className="mb-2 text-center">
               Please sign-in to your account!
+              <br/>
+              Email: mishuali488@gmail.com
+              <br/>
+              Pass: 123456
             </CardText>
             <Form>
               <Label className="form-label" for="login-email">
