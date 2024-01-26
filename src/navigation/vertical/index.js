@@ -24,12 +24,12 @@ export default [
     id: "contact us",
     title: "Manage Roles",
     icon: <FiNavigation size={20} />,
-    navLink: "/contact"
+    navLink: "/manage-roles"
   },
   {
-    id: "about us ",
+    id: "manage users",
     title: "Manage Users",
     icon: <FiUsers size={20} />,
-    navLink: "/about"
+    navLink: "/manage-users"
   }
 ]

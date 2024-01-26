@@ -865,3 +865,239 @@ div {
     background-image: url('../assets/images/login-page.jpg');
     background-size: cover;
 }
+
+
+/* manage roles */
+
+.add-user{
+    padding-left: 227px;
+    
+   
+}
+
+.addbtn{
+    background-color: #7367F0;
+    border: none;
+    padding: 8px;
+    border-radius:5px;
+    color: #fff;
+    margin-top:10px;
+}
+ 
+.searchbar{
+    padding-left: 67px;
+}
+.searchbtn{
+    background-color: #7367F0;
+    border: none;
+    padding: 8px;
+    border-radius:5px;
+    color: #fff;
+}
+
+.search{
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.srno {
+    padding: 15px;
+    /* color: gray; */
+    font-weight: 300;
+    font-size: 15px;
+    min-width: 200px;
+    margin: 0px;
+    border: 1px solid rgb(156, 156, 156);
+}
+
+.role {
+    padding: 15px;
+    padding-bottom: 15px;
+    color: black;
+    min-width: 650px;
+    font-size: 15px;
+    width: 170px;
+    border: 1px solid rgb(156, 156, 156);
+}
+
+
+
+
+.actions {
+    border: 1px solid rgb(156, 156, 156);
+    width: 350px;
+    background: none;
+  
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .add-user {
+       padding-left: 253px ;
+    }
+
+    .searchbar{
+        padding-left: 75px;
+    }
+    .searchbtn{
+        background-color: #7367F0;
+        border: none;
+        padding: 8px;
+        border-radius:5px;
+        color: #fff;
+    }
+    
+    .search{
+        border: none;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+    .srno {
+        min-width: 70px;
+     
+    }
+    
+    .role {
+ 
+        min-width: 160px;
+     
+    }
+    
+    
+    
+    
+    .actions {
+      
+        font-weight: 50;
+    
+    }
+   
+}
+
+
+
+/* mamnager users */
+
+.useradd-user{
+    padding-left: 220px;
+    
+}
+
+.useraddbtn{
+    background-color: #7367F0;
+    border: none;
+    padding: 8px;
+    border-radius:5px;
+    color: #fff;
+    margin-top:10px;
+}
+ 
+.usersearchbar{
+    padding-left: 60px;
+}
+.usersearchbtn{
+    background-color: #7367F0;
+    border: none;
+    padding: 8px;
+    border-radius:5px;
+    color: #fff;
+}
+
+.usersearch{
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+
+.usersrno{
+    border: 1px solid rgb(156, 156, 156);
+    min-width: 100px;
+    background: none;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+}
+
+
+.username{
+    border: 1px solid rgb(156, 156, 156);
+    min-width: 170px;
+    background: none;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+
+}
+.usermail{
+    border: 1px solid rgb(156, 156, 156);
+    min-width: 170px;
+    background: none;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+}
+.usercontact{
+    border: 1px solid rgb(156, 156, 156);
+    min-width: 170px;
+    background: none;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+}
+.userrole{
+    border: 1px solid rgb(156, 156, 156);
+    min-width: 150px;
+    background: none;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+}
+.userstatus{
+    border: 1px solid rgb(156, 156, 156);
+    min-width: 150px;
+    background: none;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+}
+
+.useractions{  
+    border: 1px solid rgb(156, 156, 156);
+    min-width: 120px;
+    background: none;
+    font-size: 15px;
+    padding: 15px;
+    padding-bottom: 15px;
+    color: black;
+    text-align: center;
+    font-weight: 300;
+}

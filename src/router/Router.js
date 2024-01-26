@@ -2,7 +2,7 @@
 import { useRoutes } from "react-router-dom";
 
 // ** GetRoutes
-import { getRoutes } from "./routes/index";
+import { getRoutes } from "./routes";
 
 // ** Hooks Imports
 import { useLayout } from "@hooks/useLayout";

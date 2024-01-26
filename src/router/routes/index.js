@@ -14,6 +14,8 @@ import PublicRoute from "@components/routes/PublicRoute";
 import { isObjEmpty } from "@utils";
 import CooimgSoon from "../../views/CooimgSoon";
 import Dashboard from "../../views/Dashboard";
+import ManageRoles from "../../views/ManageRoles";
+import ManageUsers from "../../views/ManageUsers";
 
 const getLayout = {
   blank: <BlankLayout />,
@@ -25,17 +27,17 @@ const getLayout = {
 const TemplateTitle = "%s - Vuexy React Admin Template";
 
 // ** Default Route
-const DefaultRoute = "/login";
+const DefaultRoute = "/home";
 
 const Home = lazy(() => import("../../views/Home"));
 const UpdateNo = lazy(() => import("../../views/UpdateNo"));
 const Service = lazy(() => import("../../views/Service"));
 const Contact = lazy(() => import("../../views/Contact"));
-const About = lazy(() => import("../../views/About"));
+const About = lazy(() => import("../../views/ManageUsers"));
 const Login = lazy(() => import("../../views/Login/Login"));
 const Register = lazy(() => import("../../views/Register"));
 const ForgotPassword = lazy(() => import("../../views/ForgotPassword"));
-const ProtectedRoutes = lazy(() => import("../../views/ProtectedRoutes"));
+// const PrivateRoute = lazy(() => import("../../views/PrivateRoute"));
 const Error = lazy(() => import("../../views/Error"));
 
 // ** Merge Routes
@@ -49,10 +51,9 @@ const Routes = [
     index: true,
     element: <Navigate replace to={DefaultRoute} />,
   },
-
   // {
   //   path: "/home",
-  //   element: <ProtectedRoutes><Home /> </ProtectedRoutes>,
+  //   element: <PrivateRoute path="/home" exact><Home /></PrivateRoute>,
   // },
   {
     path: "/home",
@@ -63,6 +64,10 @@ const Routes = [
     element: <Dashboard />,
   },
   {
+    path: "/manage-roles",
+    element: <ManageRoles />,
+  },
+  {
     path: "/service",
     element: <Service />,
   },
@@ -71,8 +76,8 @@ const Routes = [
     element: <Contact />,
   },
   {
-    path: "/about",
-    element: <About />,
+    path: "/manage-users",
+    element: <ManageUsers />,
   },
   {
     path: "/order-details/:id",

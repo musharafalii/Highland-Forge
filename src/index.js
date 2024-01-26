@@ -38,21 +38,16 @@ import "@styles/react/libs/react-hot-toasts/react-hot-toasts.scss";
 import "./@core/assets/fonts/feather/iconfont.css";
 import "./@core/scss/core.scss";
 import "./assets/scss/style.scss";
-import { AuthContextProvider } from './context/AuthContext'
+
 
 // ** Lazy load app
 const LazyApp = lazy(() => import("./App"));
 
-
-
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-
-
 root.render(
-  <BrowserRouter>
-    <AuthContextProvider >
+  <BrowserRouter>   
       <Provider store={store}>
         <Suspense fallback={<Spinner />}>
           <ThemeContext>
@@ -63,9 +58,6 @@ root.render(
             />
           </ThemeContext>
         </Suspense>
-
       </Provider>
-
-    </AuthContextProvider >
   </BrowserRouter>
 );
