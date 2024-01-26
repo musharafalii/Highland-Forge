@@ -58,7 +58,7 @@ const ManageUsers = () => {
           </div>
 
         </div>
-        <div className="border pt-1">
+        <div className="border mt-1">
           <div className="row ">
             <div className="col-md-8">
             </div>

@@ -885,7 +885,7 @@ div {
 }
  
 .searchbar{
-    padding-left: 67px;
+    padding-left: 40px;
 }
 .searchbtn{
     background-color: #7367F0;
@@ -1058,7 +1058,7 @@ div {
 }
 .usercontact{
     border: 1px solid rgb(156, 156, 156);
-    min-width: 170px;
+    min-width: 180px;
     background: none;
     font-size: 15px;
     padding: 15px;
@@ -1069,7 +1069,7 @@ div {
 }
 .userrole{
     border: 1px solid rgb(156, 156, 156);
-    min-width: 150px;
+    min-width: 157px;
     background: none;
     font-size: 15px;
     padding: 15px;
@@ -1100,4 +1100,56 @@ div {
     color: black;
     text-align: center;
     font-weight: 300;
+}
+
+
+
+
+@media (max-width: 768px) {
+
+    .useradd-user{
+        padding-left: 250px;
+        
+    }
+    
+   
+    .usersearchbar{
+        padding-left: 75px;
+    }
+   
+    
+    
+    .usersrno{
+        font-size: 13px;  
+        min-width: 75px;
+    }
+    
+    
+    .username{
+        font-size: 13px;
+        min-width: 90px;
+       
+    
+    }
+    .usermail{
+        font-size: 13px;
+        min-width: 90px;
+    }
+    .usercontact{
+     display: none;
+    }
+    .userrole{
+        display: none;
+    }
+    .userstatus{
+        display: none;
+    }
+    
+    .useractions{   
+        min-width: 50px;
+        font-size: 13px;
+        padding-right:25px ;
+        
+    }
+    
 }
