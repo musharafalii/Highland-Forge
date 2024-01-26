@@ -1,39 +1,37 @@
-// AuthContext.js
-
-import React, { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useState } from 'react';
+import {
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+  signOut,
+  onAuthStateChanged,
+} from 'firebase/auth';
+import { auth } from '../views/firebase/firebaseConfig';
 
 const UserContext = createContext();
 
 export const AuthContextProvider = ({ children }) => {
-  const [user, setUser] = useState(getUserFromLocalStorage());
+  const [user, setUser] = useState({});
 
-  const createUser = (name, email, password) => {
-    const newUser = { name, email, password };
-    setUser(newUser);
-    saveUserToLocalStorage(newUser);
+  const createUser = (email, password) => {
+    return createUserWithEmailAndPassword(auth, email, password);
   };
 
   const signIn = (email, password) => {
-    const storedUser = getUserFromLocalStorage();
-
-    if (storedUser && storedUser.email === email && storedUser.password === password) {
-      setUser(storedUser);
-      return true;
-    }
-
-    return false;
-  };
+    return signInWithEmailAndPassword(auth, email, password)
+  }
 
   const logout = () => {
-    setUser({});
-    removeUserFromLocalStorage();
-  };
+    return signOut(auth)
+  }
 
   useEffect(() => {
-    const storedUser = getUserFromLocalStorage();
-    if (storedUser) {
-      setUser(storedUser);
-    }
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      console.log(currentUser);
+      setUser(currentUser);
+    });
+    return () => {
+      unsubscribe();
+    };
   }, []);
 
   return (
@@ -45,21 +43,4 @@ export const AuthContextProvider = ({ children }) => {
 
 export const UserAuth = () => {
   return useContext(UserContext);
-};
-
-// Helper functions for local storage
-
-const localStorageKey = 'userInfo';
-
-const getUserFromLocalStorage = () => {
-  const storedUser = localStorage.getItem(localStorageKey);
-  return storedUser ? JSON.parse(storedUser) : {};
-};
-
-const saveUserToLocalStorage = (user) => {
-  localStorage.setItem(localStorageKey, JSON.stringify(user));
-};
-
-const removeUserFromLocalStorage = () => {
-  localStorage.removeItem(localStorageKey);
 };

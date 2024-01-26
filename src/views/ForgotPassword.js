@@ -36,7 +36,7 @@ const ForgotPassword = () => {
     <div className="auth-wrapper auth-cover">
       <Row className="auth-inner m-0">
         <Link className="brand-logo" to="/" onClick={(e) => e.preventDefault()}>
-          <svg viewBox="0 0 139 95" version="1.1" height="28">
+          {/* <svg viewBox="0 0 139 95" version="1.1" height="28">
             <defs>
               <linearGradient
                 x1="100%"
@@ -101,20 +101,22 @@ const ForgotPassword = () => {
                 </g>
               </g>
             </g>
-          </svg>
-          <h2 className="brand-text text-primary ms-1">Vuexy</h2>
+          </svg> */}
+          <h2 className="brand-text text-primary ms-1 fs-4">Highland Forge</h2>
         </Link>
-        <Col className="d-none d-lg-flex align-items-center p-5" lg="8" sm="12">
+        <Col className="d-none d-lg-flex align-items-center p-5 bg-image "   lg="7"
+          sm="12">
           <div className="w-100 d-lg-flex align-items-center justify-content-center px-5">
-            <img className="img-fluid" src={source} alt="Login Cover" />
+        
+            <h3 className="logo-main">Highland<br/> Forge</h3>
           </div>
         </Col>
         <Col
           className="d-flex align-items-center auth-bg px-2 p-lg-5"
-          lg="4"
+          lg="5"
           sm="12"
         >
-          <Col className="px-xl-2 mx-auto" sm="8" md="6" lg="12">
+          <Col className="px-xl-2 mx-auto" sm="8" md="5" lg="12">
             <CardTitle tag="h2" className="fw-bold mb-1">
               Forgot Password? 🔒
             </CardTitle>

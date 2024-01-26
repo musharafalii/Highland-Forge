@@ -147,7 +147,7 @@ const NavbarBookmarks = (props) => {
 
   return (
     <Fragment>
-      <ul className="navbar-nav d-xl-none">
+      {/* <ul className="navbar-nav d-xl-none">
         <NavItem className="mobile-menu me-auto">
           <NavLink
             className="nav-menu-main menu-toggle hidden-xs is-active"
@@ -156,8 +156,8 @@ const NavbarBookmarks = (props) => {
             <Icon.Menu className="ficon" />
           </NavLink>
         </NavItem>
-      </ul>
-      <ul className="nav navbar-nav bookmark-icons align-items-center">
+      </ul> */}
+      {/* <ul className="nav navbar-nav bookmark-icons align-items-center">
         {renderBookmarks()}
         {renderExtraBookmarksDropdown()}
         <NavItem className="nav-item d-none d-lg-block">
@@ -246,7 +246,7 @@ const NavbarBookmarks = (props) => {
             ) : null}
           </div>
         </NavItem>
-      </ul>
+      </ul> */}
     </Fragment>
   );
 };

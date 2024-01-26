@@ -746,10 +746,7 @@ div {
 
 }
 
-.header-navbar{
-    padding: 0px;
-    margin: 0px;
-}
+
 
 .circle-out {
     width: 180px;
@@ -843,9 +840,28 @@ div {
 
 /* Media Queries for Responsive Design */
 @media only screen and (max-width: 768px) {
-.feed-cards{
-width: 100%;
-}
+    .feed-cards {
+        width: 100%;
+    }
 
 }
 
+
+
+
+
+.logo-main {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    text-align: center;
+    color: #000000;
+    opacity: 1;
+}
+
+.bg-image {
+    height: 100vh;
+    width: 785px;
+    opacity: 0.5;
+    background-image: url('../assets/images/login-page.jpg');
+    background-size: cover;
+}

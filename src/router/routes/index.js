@@ -25,17 +25,17 @@ const getLayout = {
 const TemplateTitle = "%s - Vuexy React Admin Template";
 
 // ** Default Route
-const DefaultRoute = "/home";
+const DefaultRoute = "/login";
 
 const Home = lazy(() => import("../../views/Home"));
 const UpdateNo = lazy(() => import("../../views/UpdateNo"));
 const Service = lazy(() => import("../../views/Service"));
 const Contact = lazy(() => import("../../views/Contact"));
 const About = lazy(() => import("../../views/About"));
-const Login = lazy(() => import("../../views/Login"));
+const Login = lazy(() => import("../../views/Login/Login"));
 const Register = lazy(() => import("../../views/Register"));
 const ForgotPassword = lazy(() => import("../../views/ForgotPassword"));
-const PrivateRoute = lazy(() => import("../../views/PrivateRoute"));
+const ProtectedRoutes = lazy(() => import("../../views/ProtectedRoutes"));
 const Error = lazy(() => import("../../views/Error"));
 
 // ** Merge Routes
@@ -49,9 +49,10 @@ const Routes = [
     index: true,
     element: <Navigate replace to={DefaultRoute} />,
   },
+
   // {
   //   path: "/home",
-  //   element: <PrivateRoute path="/home" exact><Home /></PrivateRoute>,
+  //   element: <ProtectedRoutes><Home /> </ProtectedRoutes>,
   // },
   {
     path: "/home",

@@ -39,7 +39,7 @@ const Register = () => {
     <div className="auth-wrapper auth-cover">
       <Row className="auth-inner m-0">
         <Link className="brand-logo" to="/" onClick={(e) => e.preventDefault()}>
-          <svg viewBox="0 0 139 95" version="1.1" height="28">
+          {/* <svg viewBox="0 0 139 95" version="1.1" height="28">
             <defs>
               <linearGradient
                 x1="100%"
@@ -104,12 +104,13 @@ const Register = () => {
                 </g>
               </g>
             </g>
-          </svg>
-          <h2 className="brand-text text-primary ms-1">Vuexy</h2>
+          </svg> */}
+               <h2 className="brand-text text-primary ms-1 fs-4">Highland Forge</h2>
         </Link>
-        <Col className="d-none d-lg-flex align-items-center p-5" lg="7" sm="12">
+        <Col className="d-none bg-image d-lg-flex align-items-center p-5" lg="7" sm="12">
           <div className="w-100 d-lg-flex align-items-center justify-content-center px-5">
-            <img className="img-fluid" src={source} alt="Login Cover" />
+            {/* <img className="img-fluid" src={source} alt="Login Cover" /> */}
+            <h3 className="logo-main">Highland<br/> Forge</h3>
           </div>
         </Col>
         <Col
@@ -118,10 +119,10 @@ const Register = () => {
           sm="12"
         >
           <Col className="px-xl-2 mx-auto" xs="12" sm="8" md="6" lg="12">
-            <CardTitle tag="h2" className="fw-bold mb-1">
-              Adventure starts here 🚀
+            <CardTitle tag="h2" className=" text-center fw-bold mb-1">
+              Register
             </CardTitle>
-            <CardText className="mb-2">
+            <CardText className="mb-2 text-center ">
               Make your app management easy and fun!
             </CardText>
             <Form
